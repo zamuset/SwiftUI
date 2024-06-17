@@ -40,8 +40,6 @@ struct VideoListView: View {
     }
 }
 
-struct VideoListView_Previews: PreviewProvider {
-    static var previews: some View {
-        VideoListView()
-    }
+#Preview {
+  VideoListView()
 }

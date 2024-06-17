@@ -38,13 +38,10 @@ struct MapAnnotationView: View {
     }
 }
 
-struct MapAnnotationView_Previews: PreviewProvider {
-    
-    static var locations: [NationalParkLocation] = Bundle.main.decode("locations.json")
-    
-    static var previews: some View {
-        MapAnnotationView(location: locations[0])
-            .previewLayout(.sizeThatFits)
-            .padding()
-    }
+#Preview {
+  let locations: [NationalParkLocation] = Bundle.main.decode("locations.json")
+  
+  return MapAnnotationView(location: locations[0])
+    .previewLayout(.sizeThatFits)
+    .padding()
 }

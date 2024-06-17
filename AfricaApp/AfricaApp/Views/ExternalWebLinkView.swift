@@ -30,10 +30,8 @@ struct ExternalWebLinkView: View {
   }
 }
 
-struct ExternalWebLinkView_Previews: PreviewProvider {
-  static let animals: [Animal] = Bundle.main.decode("animals.json")
+#Preview {
+  let animals: [Animal] = Bundle.main.decode("animals.json")
   
-  static var previews: some View {
-    ExternalWebLinkView(animal: animals[0])
-  }
+  return ExternalWebLinkView(animal: animals[0])
 }

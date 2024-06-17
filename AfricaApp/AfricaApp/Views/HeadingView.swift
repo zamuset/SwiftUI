@@ -26,8 +26,6 @@ struct HeadingView: View {
   }
 }
 
-struct HeadingView_Previews: PreviewProvider {
-  static var previews: some View {
-    HeadingView(headingImage: "photo.on.rectangle.angled", headingText: "something something")
-  }
+#Preview {
+  HeadingView(headingImage: "photo.on.rectangle.angled", headingText: "something something")
 }

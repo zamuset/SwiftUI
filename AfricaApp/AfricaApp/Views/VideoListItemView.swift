@@ -44,12 +44,10 @@ struct VideoListItemView: View {
     }
 }
 
-struct VideoListItem_Previews: PreviewProvider {
-    static let videos: [Video] = Bundle.main.decode("videos.json")
-    
-    static var previews: some View {
-        VideoListItemView(video: videos[0])
-            .previewLayout(.sizeThatFits)
-            .padding()
-    }
+#Preview {
+  let videos: [Video] = Bundle.main.decode("videos.json")
+  
+  return VideoListItemView(video: videos[0])
+    .previewLayout(.sizeThatFits)
+    .padding()
 }

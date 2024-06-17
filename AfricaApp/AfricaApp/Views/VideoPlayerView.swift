@@ -33,10 +33,7 @@ struct VideoPlayerView: View {
     }
 }
 
-struct VideoPlayerView_Previews: PreviewProvider {
-    static var previews: some View {
-        NavigationView {
-            VideoPlayerView(videoSelected: "lion", videoTitle: "Lion")
-        }
-    }
+
+#Preview {
+  VideoPlayerView(videoSelected: "lion", videoTitle: "Lion")
 }
