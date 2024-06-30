@@ -36,8 +36,8 @@ struct GalleryView: View {
                 Image(selectedAnimal)
                     .resizable()
                     .scaledToFit()
-                    .clipShape(Circle())
-                    .overlay(Circle().stroke(Color.white, lineWidth: 8))
+                    .clipShape(RoundedRectangle(cornerRadius: 5))
+                    .overlay(RoundedRectangle(cornerRadius: 5).stroke(Color.white, lineWidth: 8))
                 
                 // SLIDER
                 Slider(value: $gridColumn, in: 2...4, step: 1)

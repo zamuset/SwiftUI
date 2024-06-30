@@ -16,7 +16,6 @@ struct VideoPlayerView: View {
     var body: some View {
         VStack {
             VideoPlayer(player: playVideo(fileName: videoSelected, fileFormat: "mp4")) {
-//                Text(videoTitle)
             }
             .overlay(
                 Image("logo")
