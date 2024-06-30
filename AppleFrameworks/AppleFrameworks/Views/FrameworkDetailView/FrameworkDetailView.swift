@@ -31,8 +31,15 @@ struct FrameworkDetailView: View {
             Button(action: {
                 isShowingSafariView = true
             }, label: {
-                AFButton(title: "Learn More")
+//                AFButton(title: "Learn More")
+                Label("Learn More", systemImage: "book.fill")
             })
+            .buttonStyle(.borderedProminent)
+            .controlSize(.large)
+//            .foregroundStyle(.yellow)
+            .buttonBorderShape(.capsule)
+            .tint(.red)
+            
         }
 //        .sheet // Other option to show detail
         .fullScreenCover(isPresented: $isShowingSafariView, content: {

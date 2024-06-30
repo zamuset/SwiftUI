@@ -34,7 +34,6 @@ struct FrameworkGridView: View {
                                 .onTapGesture {
                                     viewModel.selectedFramework = framework
                                 }
-                                /// Navigate to `FrameworkDetailView`
                             }
                         } // LazyVGrid
                         
