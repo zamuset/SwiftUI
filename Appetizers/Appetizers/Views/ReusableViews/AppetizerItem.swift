@@ -17,10 +17,8 @@ struct AppetizerItem: View {
                 image
                     .thumbnailModifier()
             } placeholder: {
-                ProgressView()
-                    .containerRelativeFrame(.horizontal) { size, axis in
-                        size * 0.4
-                    }
+                Image("food-placeholder")
+                    .thumbnailModifier()
             }
             
             VStack(alignment: .leading, spacing: 5) {

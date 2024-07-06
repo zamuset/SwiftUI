@@ -94,12 +94,11 @@
 		F81AFE342C39DBC000A82813 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				F81AFE3C2C39E14B00A82813 /* AppetizerItem.swift */,
+				F81AFE482C39ECE100A82813 /* ReusableViews */,
 				F81AFE2E2C39DBAD00A82813 /* AccountView.swift */,
 				F81AFE302C39DBB400A82813 /* AppetizerListView.swift */,
 				F81AFE322C39DBB900A82813 /* OrderView.swift */,
 				F81AFE222C39DB6D00A82813 /* AppetizerTabView.swift */,
-				F81AFE462C39EAAA00A82813 /* LoadingView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -143,6 +142,15 @@
 				F81AFE402C39E33700A82813 /* NetworkManager.swift */,
 			);
 			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		F81AFE482C39ECE100A82813 /* ReusableViews */ = {
+			isa = PBXGroup;
+			children = (
+				F81AFE3C2C39E14B00A82813 /* AppetizerItem.swift */,
+				F81AFE462C39EAAA00A82813 /* LoadingView.swift */,
+			);
+			path = ReusableViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
