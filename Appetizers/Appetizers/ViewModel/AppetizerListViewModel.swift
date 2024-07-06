@@ -10,14 +10,27 @@ import SwiftUI
 @Observable final class AppetizerListViewModel {
     
     var appetizers: [Appetizer] = []
+    var alertItem: AlertItem?
+    var isLoading: Bool = false
     
     func getAppetizers() {
-        NetworkManager.shared.getAppetizers { result in
+        isLoading = true
+        NetworkManager.shared.getAppetizers { [weak self] result in
+            self?.isLoading = false
             switch result {
             case .success(let appetizers):
-                self.appetizers = appetizers
+                self?.appetizers = appetizers
             case .failure(let error):
-                print(error.localizedDescription)
+                switch error {
+                case .invalidResponse:
+                    self?.alertItem = AlertContext.invalidResponse
+                case .invalidURL:
+                    self?.alertItem = AlertContext.invalidURL
+                case .invalidData:
+                    self?.alertItem = AlertContext.invalidData
+                case .unableToComplete:
+                    self?.alertItem = AlertContext.unableToComplete
+                }
             }
         }
     }

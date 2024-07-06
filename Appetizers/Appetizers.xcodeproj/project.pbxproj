@@ -19,6 +19,8 @@
 		F81AFE3D2C39E14B00A82813 /* AppetizerItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81AFE3C2C39E14B00A82813 /* AppetizerItem.swift */; };
 		F81AFE412C39E33700A82813 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81AFE402C39E33700A82813 /* NetworkManager.swift */; };
 		F81AFE432C39E6CF00A82813 /* AppetizerListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81AFE422C39E6CF00A82813 /* AppetizerListViewModel.swift */; };
+		F81AFE452C39E8B100A82813 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81AFE442C39E8B100A82813 /* Alert.swift */; };
+		F81AFE472C39EAAA00A82813 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81AFE462C39EAAA00A82813 /* LoadingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,8 @@
 		F81AFE3C2C39E14B00A82813 /* AppetizerItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerItem.swift; sourceTree = "<group>"; };
 		F81AFE402C39E33700A82813 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		F81AFE422C39E6CF00A82813 /* AppetizerListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerListViewModel.swift; sourceTree = "<group>"; };
+		F81AFE442C39E8B100A82813 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		F81AFE462C39EAAA00A82813 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +99,7 @@
 				F81AFE302C39DBB400A82813 /* AppetizerListView.swift */,
 				F81AFE322C39DBB900A82813 /* OrderView.swift */,
 				F81AFE222C39DB6D00A82813 /* AppetizerTabView.swift */,
+				F81AFE462C39EAAA00A82813 /* LoadingView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -111,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				F81AFE372C39DE5300A82813 /* Appetizer.swift */,
+				F81AFE442C39E8B100A82813 /* Alert.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -214,9 +220,11 @@
 				F81AFE3D2C39E14B00A82813 /* AppetizerItem.swift in Sources */,
 				F81AFE432C39E6CF00A82813 /* AppetizerListViewModel.swift in Sources */,
 				F81AFE382C39DE5300A82813 /* Appetizer.swift in Sources */,
+				F81AFE472C39EAAA00A82813 /* LoadingView.swift in Sources */,
 				F81AFE2F2C39DBAD00A82813 /* AccountView.swift in Sources */,
 				F81AFE312C39DBB400A82813 /* AppetizerListView.swift in Sources */,
 				F81AFE232C39DB6D00A82813 /* AppetizerTabView.swift in Sources */,
+				F81AFE452C39E8B100A82813 /* Alert.swift in Sources */,
 				F81AFE212C39DB6D00A82813 /* AppetizersApp.swift in Sources */,
 				F81AFE332C39DBB900A82813 /* OrderView.swift in Sources */,
 			);
