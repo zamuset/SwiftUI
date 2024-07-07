@@ -27,6 +27,7 @@
 		F83FDE5D2C3A1A87008F650A /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83FDE5C2C3A1A87008F650A /* String+Extension.swift */; };
 		F83FDE5F2C3A1C89008F650A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83FDE5E2C3A1C89008F650A /* User.swift */; };
 		F83FDE612C3A2226008F650A /* EmptyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83FDE602C3A2226008F650A /* EmptyState.swift */; };
+		F83FDE632C3A24CD008F650A /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83FDE622C3A24CD008F650A /* Order.swift */; };
 		F8E97D182C3A01B9002837C2 /* AppetizerInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E97D172C3A01B9002837C2 /* AppetizerInfoView.swift */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +53,7 @@
 		F83FDE5C2C3A1A87008F650A /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		F83FDE5E2C3A1C89008F650A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		F83FDE602C3A2226008F650A /* EmptyState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyState.swift; sourceTree = "<group>"; };
+		F83FDE622C3A24CD008F650A /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		F8E97D172C3A01B9002837C2 /* AppetizerInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerInfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -131,6 +133,7 @@
 				F81AFE372C39DE5300A82813 /* Appetizer.swift */,
 				F81AFE442C39E8B100A82813 /* Alert.swift */,
 				F83FDE5E2C3A1C89008F650A /* User.swift */,
+				F83FDE622C3A24CD008F650A /* Order.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -246,6 +249,7 @@
 			files = (
 				F81AFE412C39E33700A82813 /* NetworkManager.swift in Sources */,
 				F81AFE3B2C39E0D300A82813 /* Image+Extension.swift in Sources */,
+				F83FDE632C3A24CD008F650A /* Order.swift in Sources */,
 				F81AFE3D2C39E14B00A82813 /* AppetizerItem.swift in Sources */,
 				F83FDE592C3A159F008F650A /* APButton.swift in Sources */,
 				F81AFE432C39E6CF00A82813 /* AppetizerListViewModel.swift in Sources */,
