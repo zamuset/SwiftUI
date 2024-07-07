@@ -6,10 +6,9 @@
 //
 
 import SwiftUI
+import Observation
 
-@MainActor
-@Observable
-final class AppetizerListViewModel {
+@Observable final class AppetizerListViewModel {
     
     var appetizers: [Appetizer] = []
     var alertItem: AlertItem?
