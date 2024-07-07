@@ -28,7 +28,7 @@ import SwiftUI
     }
     
     func retrieveUser() {
-        guard let userData = userData else {
+        guard let userData else {
             alertItem = AlertContext.userGetError
             return
         }
