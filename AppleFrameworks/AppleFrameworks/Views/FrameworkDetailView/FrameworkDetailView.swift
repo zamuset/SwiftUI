@@ -25,22 +25,27 @@ struct FrameworkDetailView: View {
             
             Spacer()
             
-            Button(action: {
-                viewModel.isShowingSafariView = true
-            }, label: {
+            Link(
+                destination: viewModel.framework.urlString,
+                label: { AFButton(title: "Learn More") }
+            )
+            
+//            Button(action: {
+//                viewModel.isShowingSafariView = true
+//            }, label: {
 //                AFButton(title: "Learn More")
-                Label("Learn More", systemImage: "book.fill")
-            })
-            .buttonStyle(.borderedProminent)
-            .controlSize(.large)
-//            .foregroundStyle(.yellow)
-            .buttonBorderShape(.capsule)
-            .tint(.red)
+//                Label("Learn More", systemImage: "book.fill")
+//            })
+//            .buttonStyle(.borderedProminent)
+//            .controlSize(.large)
+////            .foregroundStyle(.yellow)
+//            .buttonBorderShape(.capsule)
+//            .tint(.red)
             
         }
 //        .sheet // Other option to show detail
         .fullScreenCover(isPresented: $viewModel.isShowingSafariView, content: {
-            SafariView(url: URL(string: viewModel.framework.urlString)!)
+            SafariView(url: viewModel.framework.urlString)
         })
     }
 }
