@@ -15,6 +15,10 @@ struct AlertItem: Identifiable {
 
 struct AlertContext {
     //MARK: - Network alerts
+    static let genericError         = AlertItem(title: Text("Server Error"),
+                                                message: Text("An error ocurred. Try again later."),
+                                                dismissButton: .default(.init("Ok")))
+    
     static let invalidData          = AlertItem(title: Text("Server Error"),
                                                 message: Text("Data received from the server was invalid."),
                                                 dismissButton: .default(.init("Ok")))

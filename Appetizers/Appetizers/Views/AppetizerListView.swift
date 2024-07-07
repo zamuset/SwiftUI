@@ -9,7 +9,11 @@ import SwiftUI
 
 struct AppetizerListView: View {
     
-    @State private var viewModel = AppetizerListViewModel()
+    @State private var viewModel: AppetizerListViewModel
+    
+    init(viewModel: AppetizerListViewModel) {
+        self.viewModel = viewModel
+    }
     
     var body: some View {
         ZStack {
@@ -49,5 +53,5 @@ struct AppetizerListView: View {
 }
 
 #Preview {
-    AppetizerListView()
+    AppetizerListView(viewModel: AppetizerListViewModel())
 }

@@ -13,7 +13,7 @@ struct AppetizerTabView: View {
     
     var body: some View {
         TabView {
-            AppetizerListView()
+            AppetizerListView(viewModel: AppetizerListViewModel())
                 .tabItem { Label("Home", systemImage: "house") }
             
             AccountView()

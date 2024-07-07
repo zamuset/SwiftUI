@@ -62,7 +62,6 @@ struct AccountView: View {
                             focusTextField = nil
                         }
                     }
-                    
                 }
             })
             .task {
