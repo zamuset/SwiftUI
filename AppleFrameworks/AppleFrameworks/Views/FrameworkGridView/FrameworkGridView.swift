@@ -17,9 +17,10 @@ struct FrameworkGridView: View {
                 if viewModel.showList {
                     List(MockData.frameworks) { framework in
                         NavigationLink {
-                            FrameworkDetailView(framework: framework,
-                                                isShowingDetailView: $viewModel.isShowingDetail,
-                                                isShowingCloseBtn: .constant(false))
+                            FrameworkDetailView(viewModel: .init(framework: framework,
+                                                                 isShowingDetailView: viewModel.isShowingDetail,
+                                                                 isShowingCloseBtn: false,
+                                                                 isShowingSafariView: false))
                         } label: {
                             FrameworkTitleView(framework: framework, showHorizontal: $viewModel.showList)
                         }
@@ -40,9 +41,10 @@ struct FrameworkGridView: View {
             }
             .navigationTitle("💻 Frameworks")
             .navigationDestination(for: Framework.self) { framework in
-                FrameworkDetailView(framework: framework,
-                                    isShowingDetailView: $viewModel.isShowingDetail,
-                                    isShowingCloseBtn: !$viewModel.showList)
+                FrameworkDetailView(viewModel: .init(framework: framework,
+                                                     isShowingDetailView: viewModel.isShowingDetail,
+                                                     isShowingCloseBtn: !viewModel.showList,
+                                                     isShowingSafariView: false))
             }
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {

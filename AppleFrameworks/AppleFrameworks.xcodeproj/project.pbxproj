@@ -17,6 +17,7 @@
 		F8322FE62C30CF6800670B06 /* AFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8322FE52C30CF6800670B06 /* AFButton.swift */; };
 		F8322FE82C30DA9100670B06 /* FrameworkGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8322FE72C30DA9100670B06 /* FrameworkGridViewModel.swift */; };
 		F8322FEA2C30DD2000670B06 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8322FE92C30DD2000670B06 /* SafariView.swift */; };
+		F83FDE672C3A3966008F650A /* FrameworkDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83FDE662C3A3966008F650A /* FrameworkDetailViewModel.swift */; };
 		F877D3E32C30E10C00662EDD /* XDismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F877D3E22C30E10C00662EDD /* XDismissButton.swift */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +33,7 @@
 		F8322FE52C30CF6800670B06 /* AFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFButton.swift; sourceTree = "<group>"; };
 		F8322FE72C30DA9100670B06 /* FrameworkGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkGridViewModel.swift; sourceTree = "<group>"; };
 		F8322FE92C30DD2000670B06 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
+		F83FDE662C3A3966008F650A /* FrameworkDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetailViewModel.swift; sourceTree = "<group>"; };
 		F877D3E22C30E10C00662EDD /* XDismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDismissButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -87,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				F8322FE72C30DA9100670B06 /* FrameworkGridViewModel.swift */,
+				F83FDE662C3A3966008F650A /* FrameworkDetailViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F83FDE672C3A3966008F650A /* FrameworkDetailViewModel.swift in Sources */,
 				F8322FE02C30C85E00670B06 /* FrameworkGridView.swift in Sources */,
 				F8322FE42C30CD0200670B06 /* FrameworkDetailView.swift in Sources */,
 				F877D3E32C30E10C00662EDD /* XDismissButton.swift in Sources */,

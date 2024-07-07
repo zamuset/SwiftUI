@@ -8,28 +8,25 @@
 import SwiftUI
 
 struct FrameworkDetailView: View {
-    let framework: Framework
-    @Binding var isShowingDetailView: Bool
-    @Binding var isShowingCloseBtn: Bool
-    @State var isShowingSafariView: Bool = false
+    
+    @State var viewModel: FrameworkDetailViewModel
+    
+    init(viewModel: FrameworkDetailViewModel) {
+        self.viewModel = viewModel
+    }
 
     var body: some View {
         VStack(spacing: 10) {
-            if isShowingCloseBtn {
-                XDismissButton(isShowingModal: $isShowingDetailView)
-                    .padding()
-            }
-            Spacer()
-            FrameworkTitleView(framework: framework, showHorizontal: .constant(false))
+            FrameworkTitleView(framework: viewModel.framework, showHorizontal: .constant(false))
             
-            Text(framework.description)
+            Text(viewModel.framework.description)
                 .font(.body)
                 .padding()
             
             Spacer()
             
             Button(action: {
-                isShowingSafariView = true
+                viewModel.isShowingSafariView = true
             }, label: {
 //                AFButton(title: "Learn More")
                 Label("Learn More", systemImage: "book.fill")
@@ -42,15 +39,16 @@ struct FrameworkDetailView: View {
             
         }
 //        .sheet // Other option to show detail
-        .fullScreenCover(isPresented: $isShowingSafariView, content: {
-            SafariView(url: URL(string: framework.urlString)!)
+        .fullScreenCover(isPresented: $viewModel.isShowingSafariView, content: {
+            SafariView(url: URL(string: viewModel.framework.urlString)!)
         })
     }
 }
 
 #Preview {
-    FrameworkDetailView(framework: MockData.sampleFramework,
-                        isShowingDetailView: .constant(false),
-                        isShowingCloseBtn: .constant(false))
+    FrameworkDetailView(viewModel: .init(framework: MockData.sampleFramework,
+                                         isShowingDetailView: false,
+                                         isShowingCloseBtn: false,
+                                         isShowingSafariView: false))
         .preferredColorScheme(.dark)
 }
