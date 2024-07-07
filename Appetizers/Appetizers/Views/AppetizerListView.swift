@@ -16,6 +16,8 @@ struct AppetizerListView: View {
             NavigationView {
                 List(viewModel.appetizers, id: \.id) { appetizer in
                     AppetizerItem(appetizer: appetizer)
+                        .listRowSeparator(.hidden)
+                        .listRowSeparatorTint(Color.accentColor)
                         .onTapGesture {
                             viewModel.selectedAppetizer = appetizer
                             viewModel.isShowingDetail = true

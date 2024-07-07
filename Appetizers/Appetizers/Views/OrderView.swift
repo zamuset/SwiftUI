@@ -28,8 +28,9 @@ struct OrderView: View {
                     Button(action: {
                         
                     }, label: {
-                        APButton(title: "$\(order.orderTotal, specifier: "%.2f") - Add to Order")
+                        Text("$\(order.orderTotal, specifier: "%.2f") - Add to Order")
                     })
+                    .standarButton()
                     .padding(.bottom, 25)
                 }
                 

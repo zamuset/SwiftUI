@@ -27,7 +27,7 @@ struct AccountView: View {
                         viewModel.saveChanges()
                     }, label: {
                         Text("Save changes")
-                            .foregroundStyle(.brandPrimary)
+                            .foregroundStyle(Color.accentColor)
                     })
                 }
                 
@@ -35,7 +35,7 @@ struct AccountView: View {
                         Toggle("Extra Napkins", isOn: $viewModel.user.extraNapkins)
                         Toggle("Frequent Refills", isOn: $viewModel.user.frequentRefill)
                     }
-                    .tint(.brandPrimary)
+                    .tint(.accentColor)
             }
             .navigationTitle("🙃 Account")
             .task {

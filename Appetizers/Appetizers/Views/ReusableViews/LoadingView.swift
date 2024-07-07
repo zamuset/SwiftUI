@@ -15,7 +15,7 @@ struct LoadingView: View {
             
             ProgressView()
                 .scaleEffect(5)
-                .tint(.brandPrimary)
+                .tint(.accentColor)
         }
     }
 }
