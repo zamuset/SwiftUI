@@ -26,6 +26,7 @@
 		F83FDE5B2C3A19C3008F650A /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83FDE5A2C3A19C3008F650A /* AccountViewModel.swift */; };
 		F83FDE5D2C3A1A87008F650A /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83FDE5C2C3A1A87008F650A /* String+Extension.swift */; };
 		F83FDE5F2C3A1C89008F650A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83FDE5E2C3A1C89008F650A /* User.swift */; };
+		F83FDE612C3A2226008F650A /* EmptyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83FDE602C3A2226008F650A /* EmptyState.swift */; };
 		F8E97D182C3A01B9002837C2 /* AppetizerInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E97D172C3A01B9002837C2 /* AppetizerInfoView.swift */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +51,7 @@
 		F83FDE5A2C3A19C3008F650A /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
 		F83FDE5C2C3A1A87008F650A /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		F83FDE5E2C3A1C89008F650A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		F83FDE602C3A2226008F650A /* EmptyState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyState.swift; sourceTree = "<group>"; };
 		F8E97D172C3A01B9002837C2 /* AppetizerInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerInfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -167,6 +169,7 @@
 				F8E97D172C3A01B9002837C2 /* AppetizerInfoView.swift */,
 				F81AFE492C39ED8E00A82813 /* AppetizerDetailView.swift */,
 				F83FDE582C3A159F008F650A /* APButton.swift */,
+				F83FDE602C3A2226008F650A /* EmptyState.swift */,
 			);
 			path = ReusableViews;
 			sourceTree = "<group>";
@@ -255,6 +258,7 @@
 				F83FDE5B2C3A19C3008F650A /* AccountViewModel.swift in Sources */,
 				F81AFE232C39DB6D00A82813 /* AppetizerTabView.swift in Sources */,
 				F81AFE452C39E8B100A82813 /* Alert.swift in Sources */,
+				F83FDE612C3A2226008F650A /* EmptyState.swift in Sources */,
 				F83FDE5F2C3A1C89008F650A /* User.swift in Sources */,
 				F81AFE212C39DB6D00A82813 /* AppetizersApp.swift in Sources */,
 				F81AFE332C39DBB900A82813 /* OrderView.swift in Sources */,
