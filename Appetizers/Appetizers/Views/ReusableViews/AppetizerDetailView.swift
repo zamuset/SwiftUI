@@ -42,10 +42,10 @@ struct AppetizerDetailView: View {
                                   value: "\(appetizer.calories)")
                 
                 AppetizerInfoView(title: "Carbs",
-                                  value: "\(appetizer.carbs)")
+                                  value: "\(appetizer.carbs) g")
                 
                 AppetizerInfoView(title: "Protein",
-                                  value: "\(appetizer.protein)")
+                                  value: "\(appetizer.protein) g")
             }
             
             Spacer()

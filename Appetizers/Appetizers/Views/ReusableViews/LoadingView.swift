@@ -13,8 +13,8 @@ struct LoadingView: View {
             Color(.systemBackground)
                 .ignoresSafeArea(edges: .all)
             
-            ProgressView()
-                .scaleEffect(5)
+            ProgressView("Loading...")
+                .scaleEffect(3)
                 .tint(.accentColor)
         }
     }

@@ -37,7 +37,10 @@ struct AccountView: View {
                         .keyboardType(.emailAddress)
                         .textInputAutocapitalization(.none)
                     
-                    DatePicker("Birthday", selection: $viewModel.user.birthDate, displayedComponents: .date)
+                    DatePicker("Birthday",
+                               selection: $viewModel.user.birthDate,
+                               in: Date().oneHundredTenYearsAgo...Date().eighteenYearAgo,
+                               displayedComponents: .date)
                     
                     Button(action: {
                         viewModel.saveChanges()
