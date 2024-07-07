@@ -12,6 +12,8 @@ import SwiftUI
     var appetizers: [Appetizer] = []
     var alertItem: AlertItem?
     var isLoading: Bool = false
+    var isShowingDetail = false
+    var selectedAppetizer: Appetizer?
     
     func getAppetizers() {
         isLoading = true
